@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera_ViewBob.cs" />
     <Compile Include="Assets\Scripts\FP_Camera.cs" />
     <Compile Include="Assets\Scripts\TP_Controller.cs" />
     <Compile Include="Assets\Scripts\TP_Movement.cs" />
