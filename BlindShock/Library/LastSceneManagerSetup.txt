@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Testing_Chamber.unity
+- path: Assets/Scenes/ElectricityVisualsTest.unity
   isLoaded: 1
   isActive: 1
