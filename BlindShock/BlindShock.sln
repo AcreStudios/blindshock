@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{4E189172-ECE6-434B-AAA9-8A36933B2D2C}") = "BlindShock", "Assembly-CSharp.csproj", "{AD3B37E3-559E-85B4-05BC-EF7EE60880B7}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlindShock.CSharp", "BlindShock.CSharp.csproj", "{49C20A89-AD49-BE4D-87BA-5DABF40F3F56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD3B37E3-559E-85B4-05BC-EF7EE60880B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD3B37E3-559E-85B4-05BC-EF7EE60880B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD3B37E3-559E-85B4-05BC-EF7EE60880B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD3B37E3-559E-85B4-05BC-EF7EE60880B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C20A89-AD49-BE4D-87BA-5DABF40F3F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C20A89-AD49-BE4D-87BA-5DABF40F3F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C20A89-AD49-BE4D-87BA-5DABF40F3F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C20A89-AD49-BE4D-87BA-5DABF40F3F56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

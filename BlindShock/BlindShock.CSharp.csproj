@@ -69,8 +69,8 @@
     <Compile Include="Assets\Scripts\CircuitScripts\ElectricGenerator.cs" />
     <Compile Include="Assets\Scripts\CircuitScripts\ElectricSwitch.cs" />
     <Compile Include="Assets\Scripts\CircuitScripts\EletricDeconductor.cs" />
-    <Compile Include="Assets\Scripts\CircuitScripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\CircuitScripts\InteractionScript.cs" />
+    <Compile Include="Assets\Scripts\CircuitScripts\Interfaces.cs" />
     <Compile Include="Assets\Scripts\Electricity_Visuals.cs" />
     <Compile Include="Assets\Scripts\FP_Camera.cs" />
     <Compile Include="Assets\Scripts\Menus\Loading.cs" />
