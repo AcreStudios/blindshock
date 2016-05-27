@@ -46,12 +46,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera_ViewBob.cs" />
+     <Compile Include="Assets\Scripts\CircuitScripts\ElectricChargePoweredGenerator.cs" />
      <Compile Include="Assets\Scripts\CircuitScripts\ElectricConductor.cs" />
      <Compile Include="Assets\Scripts\CircuitScripts\ElectricConductorGroup.cs" />
      <Compile Include="Assets\Scripts\CircuitScripts\ElectricDoor.cs" />
      <Compile Include="Assets\Scripts\CircuitScripts\ElectricGenerator.cs" />
      <Compile Include="Assets\Scripts\CircuitScripts\ElectricSwitch.cs" />
      <Compile Include="Assets\Scripts\CircuitScripts\EletricDeconductor.cs" />
+     <Compile Include="Assets\Scripts\CircuitScripts\IInteractable.cs" />
+     <Compile Include="Assets\Scripts\CircuitScripts\InteractionScript.cs" />
+     <Compile Include="Assets\Scripts\Electricity_Visuals.cs" />
      <Compile Include="Assets\Scripts\FP_Camera.cs" />
      <Compile Include="Assets\Scripts\TP_Controller.cs" />
      <Compile Include="Assets\Scripts\TP_Movement.cs" />
