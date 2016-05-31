@@ -23,12 +23,12 @@ public class ElectricDoor : ElectricConductor, IInteractable {
     public void Interact() {
         if (currentFlowing) {
             currentFlowing = false;
-            playerInst.currentCharge += charge;
+           // playerInst.currentCharge += charge;
             charge = 0;
         } else {
             currentFlowing = true;
-            charge = playerInst.currentCharge;
-            playerInst.currentCharge = 0;
+           // charge = playerInst.currentCharge;
+           // playerInst.currentCharge = 0;
         }
         VoltageFlow();
     }

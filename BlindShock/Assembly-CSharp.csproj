@@ -46,19 +46,22 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera_ViewBob.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\ElectricChargePoweredGenerator.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\ElectricConductor.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\ElectricConductorGroup.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\ElectricDoor.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\ElectricGenerator.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\ElectricSwitch.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\EletricDeconductor.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\InteractionScript.cs" />
-     <Compile Include="Assets\Scripts\CircuitScripts\Interfaces.cs" />
+     <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Electricity_Visuals.cs" />
      <Compile Include="Assets\Scripts\FP_Camera.cs" />
+     <Compile Include="Assets\Scripts\Generator.cs" />
+     <Compile Include="Assets\Scripts\InteractionScript.cs" />
+     <Compile Include="Assets\Scripts\Interfaces.cs" />
      <Compile Include="Assets\Scripts\Menus\Loading.cs" />
      <Compile Include="Assets\Scripts\Menus\Menu.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\ElectricChargePoweredGenerator.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\ElectricConductor.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\ElectricConductorGroup.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\ElectricDoor.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\ElectricGenerator.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\ElectricSwitch.cs" />
+     <Compile Include="Assets\Scripts\OldScripts\CircuitScripts\EletricDeconductor.cs" />
+     <Compile Include="Assets\Scripts\Switch.cs" />
      <Compile Include="Assets\Scripts\TP_Controller.cs" />
      <Compile Include="Assets\Scripts\TP_Movement.cs" />
  <Reference Include="UnityEngine.UI">
