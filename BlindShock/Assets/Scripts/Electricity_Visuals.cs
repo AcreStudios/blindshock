@@ -34,24 +34,21 @@ public class Electricity_Visuals : MonoBehaviour
 	{
 		// How many segments the electricity will have
 		lineRend.SetVertexCount(numberOfSegments);
-
-		// Creates that zig-zag shape
-		RandomizePositions();
 	}
-	
-	void RandomizePositions()
-	{
-		for(int i = 0; i < numberOfSegments; i++)
-		{
-			float x = Mathf.Lerp(startPos.position.x, endPos.position.x, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
-			float y = Mathf.Lerp(startPos.position.y, endPos.position.y, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
-			float z = Mathf.Lerp(startPos.position.z, endPos.position.z, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
 
-			lineRend.SetPosition(i, new Vector3(x, y, z));
-		}
+    public void RandomizePositions() {
+        if (startPos != null && endPos != null) {
+            for (int i = 0; i < numberOfSegments; i++) {
+                float x = Mathf.Lerp(startPos.position.x, endPos.position.x, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
+                float y = Mathf.Lerp(startPos.position.y, endPos.position.y, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
+                float z = Mathf.Lerp(startPos.position.z, endPos.position.z, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
 
-		StartCoroutine(RebirthSelf());
-	}
+                lineRend.SetPosition(i, new Vector3(x, y, z));
+            }
+
+            StartCoroutine(RebirthSelf());
+        }
+    }
 
 	IEnumerator RebirthSelf()
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Switch : MonoBehaviour, IInteractable {
+public class Switch : Electricity, IInteractable {
 
     [Tooltip("The maximum amount of charges you can put in this switch.")]
     public float maxCharge;
@@ -9,8 +9,9 @@ public class Switch : MonoBehaviour, IInteractable {
     public Door connectedDoor;
     float charge;
 
-    void Start() {
+    new void Start() {
         connectedDoor.requiredCharge += maxCharge;
+        base.Start();
     }
 
     public void Interact() {
@@ -18,5 +19,7 @@ public class Switch : MonoBehaviour, IInteractable {
             connectedDoor.DoorCheck(1);
         else
             connectedDoor.DoorCheck(0);
+
+        charge += 1;
     }
 }

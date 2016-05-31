@@ -6,6 +6,11 @@ public class InteractionScript : MonoBehaviour {
     RaycastHit hit;
     public bool hasCharge;
 
+    Renderer render;
+    void Start() {
+        render = GetComponent<Renderer>();
+    }
+
     void Update() {
         if (Input.GetKeyDown("e")) {
             if (Physics.Raycast(transform.position,transform.TransformDirection(0,0,1), out hit, 5)) {
@@ -19,6 +24,16 @@ public class InteractionScript : MonoBehaviour {
                     hasCharge = true;
                 }
                 }
+        }
+
+        if (hasCharge) {
+            if (render.material.color != Color.yellow) {
+                render.material.color = Color.yellow;
+            }
+        } else {
+            if (render.material.color != Color.white) {
+                render.material.color = Color.white;
+            }
         }
         Debug.DrawRay(transform.position, transform.TransformDirection(0, 0, 1), Color.red);
     }
