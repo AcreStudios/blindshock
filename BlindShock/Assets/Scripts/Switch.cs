@@ -20,7 +20,7 @@ public class Switch : MonoBehaviour, IInteractable {
         if (charge < maxCharge)
         {
             connectedDoor.DoorCheck(1);
-            GetComponent<Renderer>().material.color = Color.yellow;
+            GetComponent<Renderer>().material.color = Color.green;
             eletricCiruit.SetActive(true);
         }
         else

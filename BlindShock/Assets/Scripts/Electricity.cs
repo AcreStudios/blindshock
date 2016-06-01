@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Electricity : MonoBehaviour {
+public class Electricity : MonoBehaviour
+{
 
     [Tooltip("Must be placed in order. Put direction of current in accending order.")]
     public Electricity_Visuals[] points;
     public Transform endingPoint;
 
-     void Start() {
+    void Start()
+	{
         Debug.Log("LOL");
         for (int i = 0; i < points.Length; i++)
         {
@@ -19,7 +21,8 @@ public class Electricity : MonoBehaviour {
                 points[i].endPos = points[i + 1].transform;
             else
                 points[i].endPos = endingPoint.transform;
-            points[i].RandomizePositions();
-        }
+
+			points[i].RandomizePositions();
+		}
     }
 }

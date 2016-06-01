@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Door : MonoBehaviour {
+public class Door : MonoBehaviour
+{
 
     [Tooltip("Only tweak this variable if this door isn't connected to any switch!")]
     public float requiredCharge;
@@ -21,7 +22,7 @@ public class Door : MonoBehaviour {
 
         if (currentCharge >= requiredCharge)
 		{
-            doorFeedback.material.color = Color.yellow;
+            doorFeedback.material.color = Color.green;
 			//gameObject.SetActive(false);
 			StartCoroutine(DoorSlide(transform.position + Vector3.left * 1.4f, 0.2f));
         }

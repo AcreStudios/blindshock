@@ -23,7 +23,6 @@ public class Electricity_Visuals : MonoBehaviour
 
     public void RandomizePositions()
     {
-
         for (int i = 0; i < numberOfSegments; i++)
         {
             float x = Mathf.Lerp(startPos.position.x, endPos.position.x, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
@@ -33,7 +32,7 @@ public class Electricity_Visuals : MonoBehaviour
             lineRend.SetPosition(i, new Vector3(x, y, z));
         }
 
-        StartCoroutine(RebirthSelf());
+		StartCoroutine(RebirthSelf());
     }
 
     IEnumerator RebirthSelf()
@@ -47,7 +46,7 @@ public class Electricity_Visuals : MonoBehaviour
             yield return null;
         }
 
-        RandomizePositions();
+		RandomizePositions();
         aColor = Color.white;
         lineRend.SetColors(aColor, aColor);
     }
