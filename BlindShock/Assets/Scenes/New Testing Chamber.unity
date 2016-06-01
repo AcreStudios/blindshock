@@ -3895,9 +3895,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.1
+  randomPositionOffset: 0.12
   lifetimeDuration: 0.24
-  decayRate: 300
+  decayRate: 6
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -4904,7 +4904,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1388047230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 34.5, z: 0}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
   m_LocalScale: {x: 20, y: 1, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
