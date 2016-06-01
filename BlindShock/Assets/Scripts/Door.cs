@@ -15,12 +15,24 @@ public class Door : MonoBehaviour {
         doorFeedback = doorIndi.GetComponent<Renderer>();
     }
 
-    public void DoorCheck(float amountOfCharge) {
+    public void DoorCheck(float amountOfCharge)
+	{
         currentCharge += amountOfCharge;
 
-        if (currentCharge >= requiredCharge) {
+        if (currentCharge >= requiredCharge)
+		{
             doorFeedback.material.color = Color.yellow;
-            gameObject.SetActive(false);
+			//gameObject.SetActive(false);
+			StartCoroutine(DoorSlide(transform.position + Vector3.left * 1.4f, 0.2f));
         }
     }
+
+	IEnumerator DoorSlide(Vector3 pos, float speed)
+	{
+		while(transform.position != pos)
+		{
+			transform.position = Vector3.MoveTowards(transform.position, pos, speed * Time.deltaTime);
+			yield return null;
+		}
+	}
 }
