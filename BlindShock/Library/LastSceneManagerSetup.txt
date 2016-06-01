@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/New Switch Experiment.unity
+- path: Assets/Scenes/New Testing Chamber.unity
   isLoaded: 1
   isActive: 1
