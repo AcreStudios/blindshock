@@ -689,9 +689,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -1054,9 +1054,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 24
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -1208,9 +1208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 18
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -1329,9 +1329,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 3
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -2399,9 +2399,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -3025,9 +3025,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 12
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -3520,7 +3520,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: randomPositionOffset
-      value: 0.12
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 12033380, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: m_Parameters.startWidth
@@ -3532,11 +3532,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: decayRate
-      value: 6
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: lifetimeDuration
-      value: 0.24
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -3725,9 +3725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 12
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -3895,9 +3895,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -4026,7 +4026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11408882, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
       propertyPath: cLock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 419808, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
       propertyPath: m_RootOrder
@@ -4039,6 +4039,26 @@ Prefab:
     - target: {fileID: 14398298, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
       propertyPath: m_Radius
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025616, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025616, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025616, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025616, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025616, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
+      propertyPath: m_BackGroundColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c69f962a4ec6484a97f99172e84baea, type: 2}
@@ -4282,9 +4302,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 12
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -4410,9 +4430,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 24
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -4749,9 +4769,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 36
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -5073,9 +5093,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 18
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -5194,9 +5214,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -5622,9 +5642,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 12
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -5743,9 +5763,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 3
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -6025,9 +6045,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 12
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -6279,9 +6299,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -6470,9 +6490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 6
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -7199,9 +7219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 12
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
@@ -7467,7 +7487,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: randomPositionOffset
-      value: 0.12
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 12033380, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: m_Parameters.startWidth
@@ -7479,11 +7499,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: decayRate
-      value: 6
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: lifetimeDuration
-      value: 0.24
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -7907,7 +7927,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: randomPositionOffset
-      value: 0.12
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 12033380, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: m_Parameters.startWidth
@@ -7919,11 +7939,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: decayRate
-      value: 6
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 11471710, guid: ca9cb16f583d0e34ea76cd6214ffc236, type: 2}
       propertyPath: lifetimeDuration
-      value: 0.24
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -8328,9 +8348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSegments: 3
-  randomPositionOffset: 0.12
-  lifetimeDuration: 0.24
-  decayRate: 6
+  randomPositionOffset: 0.07
+  lifetimeDuration: 0.05
+  decayRate: 6000
   startPos: {fileID: 0}
   endPos: {fileID: 0}
   lineRend: {fileID: 0}
