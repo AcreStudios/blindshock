@@ -35,6 +35,10 @@ public class TP_Controller : MonoBehaviour
 		HandleActionInput();
 
 		TP_Movement.instance.MovementUpdate();
+
+        if(Input.GetKeyDown("p")) {
+            Application.LoadLevel("Loading");
+        }
 	}
 
 	void GetLocomotionInput()
