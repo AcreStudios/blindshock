@@ -10,6 +10,6 @@ public class Loading : MonoBehaviour {
 
     IEnumerator TimerThingy() {
         yield return new WaitForSeconds(5);
-        Application.LoadLevel("Testing_Chamber");
+        Application.LoadLevel("New Testing Chamber");
     }
 }
