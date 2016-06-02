@@ -5,15 +5,18 @@ public class InteractionScript : MonoBehaviour {
 
     RaycastHit hit;
     public bool hasCharge;
-
+    public Transform hand;
+    
+    
     Renderer render;
+
     void Start() {
-        render = GetComponent<Renderer>();
+        render = transform.Find("Model_Player/R_Hand").gameObject.GetComponent<Renderer>();
     }
 
     void Update() {
         if (Input.GetKeyDown("e")) {
-            if (Physics.Raycast(transform.position,transform.TransformDirection(0,0,1), out hit, 5)) {
+            if (Physics.Raycast(hand.transform.position,transform.TransformDirection(0,0,1), out hit, 5)) {
                 if (hit.transform.gameObject.GetComponent<MonoBehaviour>() is IInteractable) {
                     if (hasCharge) {
                         hit.transform.gameObject.GetComponent<IInteractable>().Interact();
@@ -35,6 +38,6 @@ public class InteractionScript : MonoBehaviour {
                 render.material.color = Color.white;
             }
         }
-        Debug.DrawRay(transform.position, transform.TransformDirection(0, 0, 1), Color.red);
+        Debug.DrawRay(hand.transform.position, transform.TransformDirection(0, 0, 1), Color.red);
     }
 }

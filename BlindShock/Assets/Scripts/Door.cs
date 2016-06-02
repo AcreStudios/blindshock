@@ -7,12 +7,20 @@ public class Door : MonoBehaviour {
     public float requiredCharge;
     public float currentCharge;
 
+    public GameObject doorIndi;
+    Renderer doorFeedback;
+
+    void Start()
+    {
+        doorFeedback = doorIndi.GetComponent<Renderer>();
+    }
+
     public void DoorCheck(float amountOfCharge) {
         currentCharge += amountOfCharge;
 
         if (currentCharge >= requiredCharge) {
-            Debug.Log("Open Door");
-            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            doorFeedback.material.color = Color.yellow;
+            gameObject.SetActive(false);
         }
     }
 }
