@@ -2,67 +2,53 @@
 using System.Collections;
 
 [RequireComponent(typeof(LineRenderer))]
-public class Electricity_Visuals : MonoBehaviour 
+public class Electricity_Visuals : MonoBehaviour
 {
-	#region Variables
-	public int numberOfSegments = 12;
-	public float randomPositionOffset = 0.2f;
+    #region Variables
+    public int numberOfSegments = 12;
+    public float randomPositionOffset = 0.2f;
 
-	public float lifetimeDuration = 1f;
-	Color aColor = Color.white;
-	public float decayRate = 5f; // Fade away rate after lifetime duration is up
+    public float lifetimeDuration = 1f;
+    Color aColor = Color.white;
+    public float decayRate = 5f; // Fade away rate after lifetime duration is up
 
-	// Set by other scripts
-	public Transform startPos;
-	public Transform endPos;
-	#endregion
+    // Set by other scripts
+    public Transform startPos;
+    public Transform endPos;
+    #endregion
 
-	#region Cache components
-	LineRenderer lineRend;
-	#endregion
+    #region Cache components
+    public LineRenderer lineRend;
+    #endregion
 
-	void Awake()
-	{
-		// Cache component
-		lineRend = GetComponent<LineRenderer>();
+    public void RandomizePositions()
+    {
 
-		// Set material
-		// We can have an static material bank later...
-	}
+        for (int i = 0; i < numberOfSegments; i++)
+        {
+            float x = Mathf.Lerp(startPos.position.x, endPos.position.x, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
+            float y = Mathf.Lerp(startPos.position.y, endPos.position.y, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
+            float z = Mathf.Lerp(startPos.position.z, endPos.position.z, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
 
-	void Start() 
-	{
-		// How many segments the electricity will have
-		lineRend.SetVertexCount(numberOfSegments);
-	}
-
-    public void RandomizePositions() {
-        if (startPos != null && endPos != null) {
-            for (int i = 0; i < numberOfSegments; i++) {
-                float x = Mathf.Lerp(startPos.position.x, endPos.position.x, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
-                float y = Mathf.Lerp(startPos.position.y, endPos.position.y, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
-                float z = Mathf.Lerp(startPos.position.z, endPos.position.z, i / (numberOfSegments - 1f)) + Random.Range(-randomPositionOffset, randomPositionOffset);
-
-                lineRend.SetPosition(i, new Vector3(x, y, z));
-            }
-
-            StartCoroutine(RebirthSelf());
+            lineRend.SetPosition(i, new Vector3(x, y, z));
         }
+
+        StartCoroutine(RebirthSelf());
     }
 
-	IEnumerator RebirthSelf()
-	{
-		yield return new WaitForSeconds(lifetimeDuration);
-		while(aColor.a > 0)
-		{
-			aColor.a -= decayRate * Time.deltaTime;
-			lineRend.SetColors(aColor, aColor);
+    IEnumerator RebirthSelf()
+    {
+        yield return new WaitForSeconds(lifetimeDuration);
+        while (aColor.a > 0)
+        {
+            aColor.a -= decayRate * Time.deltaTime;
+            lineRend.SetColors(aColor, aColor);
 
-			yield return null;
-		}
+            yield return null;
+        }
 
-		RandomizePositions();
-		aColor = Color.white;
-		lineRend.SetColors(aColor, aColor);
-	}
+        RandomizePositions();
+        aColor = Color.white;
+        lineRend.SetColors(aColor, aColor);
+    }
 }
